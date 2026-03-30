@@ -8,15 +8,19 @@
 .linha-reprovado{
     color: red;
     font-weight: bold;
+    border: 2px dashed red;
 }
 
 .linha-recuperacao{
-    font-size: 15px;
-    background-color: gray;
+    color: orange;
+    font-weight: bold;
+    border: 2px dashed orange;
 }
 
 .linha-aprovado{
-    border-color: green;
+    color: greenyellow;
+    font-weight: bold;
+    border: 2px dashed greenyellow;
 }
 
 .invisivel {
