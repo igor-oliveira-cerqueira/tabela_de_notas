@@ -6,21 +6,21 @@
 }
 
 .linha-reprovado{
-    color: red;
+    color: rgb(182, 0, 0);
     font-weight: bold;
-    border: 2px dashed red;
+    border: 2px dashed rgb(182, 0, 0);
 }
 
 .linha-recuperacao{
-    color: orange;
+    color: rgb(201, 142, 34);
     font-weight: bold;
-    border: 2px dashed orange;
+    border: 2px dashed rgb(201, 142, 34);
 }
 
 .linha-aprovado{
-    color: greenyellow;
+    color: rgb(111, 161, 35);
     font-weight: bold;
-    border: 2px dashed greenyellow;
+    border: 2px dashed rgb(111, 161, 35);
 }
 
 .invisivel {
