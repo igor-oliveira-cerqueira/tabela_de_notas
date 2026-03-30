@@ -4,7 +4,7 @@ export function calcularMedia(nota1, nota2, nota3) {
 }
 
 export function definirStatus(media, linha) {
-    let statusAluno = linha.querySelector(".status")
+    let statusAluno = linha[5]
     if (media < 4) {
         statusAluno.textContent = "Reprovado"
     } else if ( media < 6){

@@ -1,0 +1,28 @@
+.filtro{
+    min-height: 10dvh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha-reprovado{
+    color: red;
+    font-weight: bold;
+}
+
+.linha-recuperacao{
+    font-size: 15px;
+    background-color: gray;
+}
+
+.linha-aprovado{
+    border-color: green;
+}
+
+.invisivel {
+    display: none; /*Torna os objetos invisiveis*/ 
+}
+
+.visivel {
+    display: block; /*Torna os objetos visiveis*/
+}
