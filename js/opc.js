@@ -7,12 +7,18 @@ export function definirStatus(media, linha) {
     let statusAluno = linha[5]
     if (media < 4) {
         statusAluno.textContent = "Reprovado"
+        statusAluno.classList.add("linha-reprovado");
     } else if (media < 6) {
         statusAluno.textContent = "Recuperação"
+        statusAluno.classList.add("linha-recuperacao");
     } else {
         statusAluno.textContent = "Aprovado"
+        statusAluno.classList.add("linha-aprovado");
+        
     }
 }
+
+
 
 function esconderLinha(linha, textoInput) {
     

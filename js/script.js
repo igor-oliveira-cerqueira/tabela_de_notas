@@ -18,24 +18,6 @@ for (let i = 0; i < linhas.length; i++) {
 
 // objetos de input tem values, e objetos de tr tem textContent
 
-linhas.forEach(function (linha) {
-    
-    let filho = linha.children;
-    let status = filho[5];
-
-    if (status.textContent == "Reprovado") {
-        status.classList.add("linha-reprovado");
-    }
-
-    if (status.textContent == "Recuperação") {
-        status.classList.add("linha-recuperacao");
-    }
-
-    if (status.textContent == "Aprovado") {
-        status.classList.add("linha-aprovado");
-    }
-});
-
 input.addEventListener("input", function () {
     pesquisar(linhas, input);
 });
