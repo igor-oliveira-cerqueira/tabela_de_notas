@@ -1,4 +1,4 @@
-import {calcularMedia, definirStatus} from './opc.js'
+import {calcularMedia, definirStatus, pesquisar} from './opc.js'
 
 let linhas = document.querySelectorAll("tbody tr")
 let input = document.querySelector('.entrada')
@@ -37,21 +37,6 @@ linhas.forEach(function (linha) {
 });
 
 input.addEventListener("input", function () {
-    let esconder = true;
-
-    linhas.forEach(function (linha) {
-        linha.visivel = true;
-        let celulas = linha.children;
-        
-        if (!celulas[0].textContent.includes(input.value)) {
-            linha.visivel = false;
-        }
-
-        if(linha.visivel) {
-            linha.style.display = 'table-row'
-        } else {
-            linha.style.display = 'none'
-        }
-    });
+    pesquisar(linhas, input);
 });
 

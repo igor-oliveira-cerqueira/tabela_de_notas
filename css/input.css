@@ -1,0 +1,31 @@
+.input {
+    min-height: 5dvh;
+    position: relative;
+    margin: 2% auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 3dvh;
+    min-width: 50dvw;
+    max-width: 30dvw;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 1.5em;
+    box-shadow: 0 10px 25px rgba(158, 158, 158, 0.2);
+}
+
+@media (max-width: 500px) {
+    .input {
+        min-height: auto;
+        margin: 10px auto;
+    }
+
+    input {
+        min-width: 80dvw;
+        padding: 0.8em;
+    }
+}

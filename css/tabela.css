@@ -1,12 +1,14 @@
 table{
     width: 80dvw;
-    height: 40dvh;
+    height: 10dvh;
     margin: 0 auto;
+    table-layout: auto;
     border-collapse: collapse;
     background: white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+    position: relative;
 }
 
 caption{
@@ -24,8 +26,11 @@ th{
 }
 
 td{
-    padding: 0.75rem;
     border-bottom: 0.0625rem solid #e5e7eb;
+    text-align: center;
+    padding: 10px 5px;
+    word-wrap: break-word;
+    font-size: 14px;
 }
 
 tbody tr:hover{
